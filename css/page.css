@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+
+#logo {
+    /* width: 30%; */
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    animation: borderani linear 3s infinite;
+}
+
+.text {
+    margin: auto;
+    padding: 15px;
+    width: 70%;
+    color: white;
+}
+
+.box {
+    position: relative;
+    top: 150px;
+    width: 40%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: borderani linear 3s infinite;
+}
+
+.btn {
+    cursor: pointer;
+    height: 45px;
+    width: 65px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: yellow;
+    background-color: black;
+    font-size: bold;
+    animation: borderani linear 3s infinite;
+}
+
+.btn:hover {
+    background-color: rgb(46, 40, 40);
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 32%;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    /* border: 5px solid black; */
+    background-color: rgb(139, 235, 61);
+    font-size: bold;
+    text-align: end;
+    animation: borderani linear 3s infinite;
+}
+
+.com {
+    background: url('/img/backgrou.jpg');
+    /* background-size: cover; */
+    background-repeat: repeat;
+    height: 300vw;
+}
+
+#clear {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: yellow;
+    background-color: black;
+    font-size: bold;
+    height: 45px;
+    width: 100px;
+    animation: borderani linear 3s infinite;
+}
+
+h3 {
+    padding: 5px;
+    margin: 10px;
+}
+h2{
+    animation: colorani linear 1s infinite;
+}
+
+@keyframes borderani {
+    0% {
+        border: 5px solid black;
+    }
+    20% {
+        border: 5px solid rgb(224, 1, 1);
+    }
+    40% {
+        border: 5px solid rgb(152, 194, 0);
+    }
+    60% {
+        border: 5px solid rgb(5, 255, 151);
+    }
+    80% {
+        border: 5px solid rgb(55, 0, 255);
+    }
+    100% {
+        border: 5px solid black;
+    }
+}
+
+@keyframes colorani {
+    0% {
+        color: white;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: white;
+    }
+}
